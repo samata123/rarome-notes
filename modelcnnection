@@ -1,0 +1,7 @@
+check the controller where the models have been displayed
+
+fees/model
+
+in that save, edit, delete functins  queries will be written
+
+$this->fee_model->save_fee_head($saverequestdata);$this->mdelname->functin name in model->varaiable stored all the values)
