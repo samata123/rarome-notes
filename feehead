@@ -1,0 +1,29 @@
+creating a table and pp up msg in that , here it is fee-head.php in (fees)
+
+ <td>
+                                        <a href="javascript: void(0);" 
+                                           onclick="showAjaxModal('<?php echo base_url('index.php?fees/main/head_edit/' . $rec->id); ?>')">
+                                            <button type="button" class="btn btn-default btn-outline btn-circle btn-lg m-r-5 tooltip-danger" 
+                                                    data-toggle="tooltip" data-placement="top" data-original-title="<?php echo get_phrase('edit'); ?>">
+                                                <i class="fa fa-pencil-square-o"></i>
+                                            </button>
+                                        </a>
+    <?php if ($rec->in_grps > 0 || $rec->in_paytrans > 0 || $rec->in_invitem > 0) { ?>
+                                            <a href="#">
+                                                <button type="button" class="btn btn-default btn-outline btn-circle btn-lg m-r-5 tooltip-danger" disabled
+                                                        data-toggle="tooltip" data-placement="top" data-original-title="<?php echo get_phrase('disabled') ?>">
+                                                    <i class="fa fa-trash-o"></i>
+                                                </button>
+                                            </a>
+    <?php } else { ?>
+                                            <a href="javascript:void(0)" 
+                                               onclick="confirm_act('<?php echo base_url('index.php?fees/main/head_delete/' . $rec->id) ?>', {modalTitle: '<?php echo get_phrase('delete_fee_head?') ?>'})">
+                                                <button type="button" class="btn btn-default btn-outline btn-circle btn-lg m-r-5 tooltip-danger"
+                                                        data-toggle="tooltip" data-placement="top" data-original-title="<?php echo get_phrase('Delete'); ?>"><i class="fa fa-trash-o"></i></button>
+                                            </a>
+                                <?php } ?>
+                                    </td>
+                                </tr>
+<?php } ?>
+                        </tbody>
+                    </table>
