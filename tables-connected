@@ -4,4 +4,4 @@
 4.fee_fines. along with this table we are adding to another table save_fee_recurring_fine(for static fine_type=0 and for dynamic fine_type=1)
 5.fee_concession( for fee discount)
 6. fee_rel_grup_heads( how much amt will be stored in which head in fee group)
-7.
+7.fee-charge_setup( for allocating the amount for particular student)
