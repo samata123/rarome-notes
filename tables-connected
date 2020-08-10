@@ -1,5 +1,5 @@
-1.Fee-heads
-2.fee-terms
+1.Fee-heads (setting fee_heads)
+2.fee-terms setting terms(monthy,yars)
 3.enroll(where we have new student or not in is_new attribute)
 4.fee_fines. along with this table we are adding to another table save_fee_recurring_fine(for static fine_type=0 and for dynamic fine_type=1)
 5.fee_concession( for fee discount)
